@@ -1,13 +1,102 @@
-/*Bloc-page*/
-.blocpage
+/*Polices*/
+@font-face 
 {
-    width: 1440px;
+    font-family: 'raleway';
+    src: url('font/raleway.woff') format('woff'),
+         url('font/raleway.woff2') format('woff2');
 }
-/*Fin Bloc-page*/
-
-/*Haut de page*/
-/*Fin Haut de page*/
+/*_______*/
 
 
+/*Bloc-page*/
+#blocpage
+{
+    font-family:'raleway', Arial, Helvetica, sans-serif;
+    width: 1340px;
+}
+/*_________*/
 
-/*Bas de page*/
+/*Header*/
+header
+{
+
+}
+.logo
+{
+
+}
+
+nav
+{
+
+}
+
+.login
+{}
+/*______*/
+
+/*Barre de recherche*/
+#searchbar
+{
+
+}
+
+#iconmap
+{
+
+}
+
+#entryfield
+{
+
+}
+/*__________________*/
+
+/*Filtres*/
+#containerfilter
+{
+   
+}
+
+.button
+{   
+    
+}
+
+
+.button i
+{
+    color: #0065fc;  
+}
+
+
+/*Section principale*/
+#section1
+{
+
+}
+
+#hébergements
+{
+
+}
+
+#pluspopulaires
+{
+
+}
+/*__________________*/
+
+/*Section secondaire*/
+/*__________________*/
+
+/*Footer*/
+footer
+[
+
+]
+.footerlist
+{
+    
+}
+/*______*/
