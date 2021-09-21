@@ -188,18 +188,29 @@ width: 235px;
 
 
 /*Section principale*/
+main
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+}
 #section1
 {
+    display: grid;
+    grid-template-columns: 67% 33%;
+    grid-column-gap: 40px;
+    
 
 }
 
 #hébergements
 {
+    background-color: #f2f2f2
 
 }
 
 #pluspopulaires
 {
+    background-color: #f2f2f2
 
 }
 /*__________________*/
