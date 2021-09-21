@@ -11,6 +11,10 @@
     font-family: 'raleway',Arial, Helvetica, sans-serif;
 }
 
+a
+{
+    text-decoration: none;
+}
 h1
 {
     font-size: x-large;
@@ -26,13 +30,11 @@ h2, button
 
 
 /*Bloc-page*/
-#blocpage
+#topsection
 {
-    width: 1340px;
+    
 }
-/*_________*/
 
-/*Header*/
 header
 {
     display: flex;
@@ -43,40 +45,80 @@ header
 
 }
 
+.signup
+{
+    width: 11%;
+    font-weight: bold;
+    text-align: center;
+    color: #0065fc;
+    position: absolute;
+    top: 0%; 
+    right: 0%;
+    height: 100px;   
+}
+
 nav 
 {
+    display: flex;
     width: 22%;
-    border: 1px solid black;
+    height: 100px; 
+    position: absolute;
+    top: 0;
+    right: 11.3% ;
+
 }
 
-#navigation
+nav div
+{   display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
+    border :1px solid blue;
+   
+}
+
+#navigation li
 {
-;
+
+
+ 
 }
 
 
-
-.login
-{
-    font-weight: bold;
-    color: #0065fc
-}
 /*______*/
 
 /*Barre de recherche*/
+
+#searchbar
+{
+    border: red 1px solid;
+}
 #request
 {
     display: flex;
+    height: fit-content;
+    width: 29%;
+    border: solid 2px green;
+    
 
 }
 
 #iconmap
 {
-
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    background-color: #f2f2f2;
+    justify-content:center;
+    align-items:center;
+    height:50px;
+    width:50px;
 }
 
 #entryfield
 {
+    border: 2px solid tomato;
 
 }
 /*__________________*/
@@ -86,10 +128,13 @@ nav
 {
     display:flex;
     align-items: center;
-
-   
 }
 
+#filters
+{
+    display: flex;
+    width: 65%;
+}
 .button
 {   
     display:flex;
@@ -99,14 +144,16 @@ nav
     height:50px;
     border-left-color: transparent;
     margin:20px;
+    padding-right: 20px;
     border-radius:50px 0px 0px 50px;
     border-top-right-radius:50px;
-    border-bottom-right-radius:50px
+    border-bottom-right-radius:50px;
+
     
 }
 
 
-.button i
+.filtersicons
 {
     display:flex;
     justify-content:center;
@@ -153,11 +200,15 @@ nav
 
 /*Footer*/
 footer
-[
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:#f2f2f2
+}
 
-]
 .footerlist
 {
+
 
 }
 /*______*/

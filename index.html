@@ -9,28 +9,30 @@
     <title>Accueil</title>
 </head>
 <body>
-    <div class="blocpage">
-
+    <div id="topsection">
         <header>
             <div class="logo">
             <p>
                 <img src="images/logo/Reservia.svg" alt="reservia.svg">
             </p>
             </div>
-            <nav>
-                <ul id="navigation">
-                    <li><a href="#hébergements">Hébergements</a></li>
-                    <li><a href="#hébergements">Activités</a></li>
-                </ul>
-            </nav>
-            <div class="login">
-                <p>S'inscrire</p>
+            <div class="signup">
+                <p><a href="#">S'inscrire</p></a>
           </div>
          </header>
+         <nav>
+             <div>
+                <a href="#hébergements">Hébergements</a>
+            </div>
+            <div>
+                <a href="#pluspopulaires">Activités</a>
+            </div>
+        </nav>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou pleine nature</p>
+    </div>
 
-         <div id="searchbar">
-             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-             <p>En plein centre ville ou pleine nature</p>
+        <div id="searchbar">
              <div id="request">
                  <div id="iconmap">
                     <div><i class="fas fa-map-marker-alt"></i></div>
@@ -45,12 +47,12 @@
          </div>
 
          <div id="containerfilter">
-             <h2>Filtres</h2>
-             <div id="request">
-                <button onclick="" class="button"><div class="conteneuricone"><i class="fas fa-money-bill-wave"></i></div>Economique</button>
-                <button onclick="" class="button"><div class="conteneuricone"><i class="fas fa-child"></i></div>Familial</button>
-                <button onclick="" class="button"><div class="conteneuricone"><i class="fas fa-heart"></i></div>Romantique</button>
-                <button onclick="" class="button"><div class="conteneuricone"><i class="fas fa-dog"></i></div>Animaux autorisés</button>
+            <h2>Filtres</h2>
+             <div id="filters">
+                <button onclick="" class="button"><div class="filtersicons"><i class="fas fa-money-bill-wave"></i></div>Economique</button>
+                <button onclick="" class="button"><div class="filtersicons"><i class="fas fa-child"></i></div>Familial</button>
+                <button onclick="" class="button"><div class="filtersicons"><i class="fas fa-heart"></i></div>Romantique</button>
+                <button onclick="" class="button"><div class="filtersicons"><i class="fas fa-dog"></i></div>Animaux autorisés</button>
             </div>
          </div>
          
@@ -67,6 +69,7 @@
                  <a href="#">Hôtel chez Amina</a>
              </div>
              <p>Afficher plus</p>
+             
 
              <div id="plusppulaires">
                 <h2>Les plus populaires</h2>
