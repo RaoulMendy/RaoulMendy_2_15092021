@@ -14,6 +14,7 @@
 a
 {
     color: initial;
+    text-decoration: none;
 }
 h1
 {
@@ -32,27 +33,15 @@ h2, button
 /*Bloc-page*/
 body
 {
-    margin: 0%;
 }
 
 header
 {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
     font-size: small;
     font-weight: bold;
-    
-
-}
-.logo
-{
-
-}
-
-.signup
-{
-    color: #0065fc;
-   
 }
 
 nav 
@@ -63,45 +52,57 @@ nav
     text-align: center;
 }
 
-nav div
-{   
-   
+#signup 
+{
+
 }
 
-
+#intro
+{
+    grid-column: span 2;
+}
 /*______*/
 
 /*Barre de recherche*/
 
 #searchbar
-{
-    border: red 1px solid;
-}
-#request
-{
-    display: flex;
-    height: fit-content;
-    width: 29%;
-    border: solid 2px green;
+{   
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr;
+    grid-template-rows: 50px;
+    justify-content: flex-end;
+    width: min-content;
+    border:transparent;
     
-
+    
 }
 
 #iconmap
 {
     display: flex;
-    justify-content: space-between;
-    width: 50px;
+    justify-content: center;
+    align-items: center;
     background-color: #f2f2f2;
-    justify-content:center;
-    align-items:center;
-    height:50px;
-    width:50px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    
 }
 
-#entryfield
+
+#ville
 {
-    border: 2px solid tomato;
+border-color: #f2f2f2;
+width: 235px;
+  
+}
+
+#submit
+{
+   background-color: #0065fc;
+   width: 135px;
+
+   border-bottom-right-radius: 10px;
+   border-top-right-radius: 10px;
 
 }
 /*__________________*/
@@ -109,14 +110,40 @@ nav div
 /*Filtres*/
 #containerfilter
 {
-    display:flex;
-    align-items: center;
+    display:grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 2fr;
+    align-content: center;
+    margin-block: 30px;
 }
+
 
 #filters
 {
     display: flex;
-    width: 65%;
+    flex-wrap: wrap;
+
+}
+
+#disponibilité
+{
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#iconinfo
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 25px;
+    width:25px;
+    border: 1px solid #f2f2f2;
+    border-radius:50%;
+    color: #0065fc; 
+    margin-right: 1%;
 }
 .button
 {   
@@ -124,13 +151,12 @@ nav div
     border:#f2f2f2 solid 2px;
     background-color: white;
     align-items:center;
-    height:50px;
     border-left-color: transparent;
-    margin:20px;
-    padding-right: 20px;
     border-radius:50px 0px 0px 50px;
     border-top-right-radius:50px;
     border-bottom-right-radius:50px;
+    margin-right: 2%;
+    padding-right: 1%;
 
     
 }
@@ -152,7 +178,7 @@ nav div
 
 .button:hover
 {
-    background-color: #0065fc;
+    background-color: #deebff;
     
 }
 
