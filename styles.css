@@ -33,6 +33,8 @@ h2, button
 /*Bloc-page*/
 body
 {
+    margin: 0%;
+    w
 }
 
 header
@@ -52,8 +54,10 @@ nav
     text-align: center;
 }
 
-#signup 
+nav, #log
 {
+    font-weight: bolder;
+    color: #0065fc;
 
 }
 
@@ -191,28 +195,90 @@ width: 235px;
 main
 {
     display: grid;
-    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 67% 33%;
+    grid-template-rows: 1fr 1fr;
+
+
+
 }
 #section1
 {
     display: grid;
-    grid-template-columns: 67% 33%;
-    grid-column-gap: 40px;
-    
+    padding: 20px;
+
 
 }
 
 #hébergements
 {
-    background-color: #f2f2f2
+    display: grid;
+    grid-template-rows: 55px 1fr 75px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f2f2f2;
+    border-radius: 10px 15px;
+    padding: 20px;
 
 }
 
-#pluspopulaires
+#hébergement, h1
 {
-    background-color: #f2f2f2
-
+    grid-column: span 3;
 }
+
+#hébergement,p
+{
+    grid-column: span 3;
+}
+
+#blocphoto1
+{   display: grid;
+    grid-column: span 3;
+    border: 1px solid sienna;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.vignette1
+
+{
+    display: grid;
+    grid-template-rows: 114px 75px ;
+    width:236px;
+    height: 189px;
+    border: 5px solid white;
+    border-radius: 10px 15px;
+}
+
+
+#mostpopular
+{
+    display: grid;
+    padding: 20px;
+}
+
+#blocphoto2
+{   display: grid;
+    grid-column: span 2;
+    border: 1px solid sienna;
+    grid-template-columns: 1fr 1 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#hébergements2
+{
+    display: grid;
+    grid-template-rows: 55px 1fr 75px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f2f2f2;
+    border-radius: 10px 15px;
+    padding: 20px;
+}
+
+#activités
+{
+    grid-column: span 2;
+}
+
 /*__________________*/
 
 /*Section secondaire*/
@@ -228,7 +294,12 @@ footer
 
 .footerlist
 {
-
-
 }
+.footerlist,li
+{
+    list-style-type: none;
+    
+}
+
+
 /*______*/
