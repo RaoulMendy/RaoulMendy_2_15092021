@@ -33,8 +33,6 @@ h2, button
 /*Bloc-page*/
 body
 {
-    margin: 0%;
-    w
 }
 
 header
@@ -53,6 +51,9 @@ nav
     align-items: center;
     text-align: center;
 }
+
+#btn_hébergements
+{}
 
 nav, #log
 {
@@ -97,14 +98,17 @@ nav, #log
 {
 border-color: #f2f2f2;
 width: 235px;
+border-style: solid;
+border-right: none;
   
 }
 
 #submit
 {
    background-color: #0065fc;
+   color: white;
    width: 135px;
-
+   border-style: none;
    border-bottom-right-radius: 10px;
    border-top-right-radius: 10px;
 
@@ -195,8 +199,9 @@ width: 235px;
 main
 {
     display: grid;
-    grid-template-columns: 67% 33%;
+    grid-template-columns: 63% 33%;
     grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
 
 
 
@@ -204,7 +209,7 @@ main
 #section1
 {
     display: grid;
-    padding: 20px;
+  
 
 
 }
@@ -231,15 +236,13 @@ main
 }
 
 #blocphoto1
-{   display: grid;
+{   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     grid-column: span 3;
-    border: 1px solid sienna;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
 }
 
 .vignette1
-
 {
     display: grid;
     grid-template-rows: 114px 75px ;
@@ -247,32 +250,65 @@ main
     height: 189px;
     border: 5px solid white;
     border-radius: 10px 15px;
+    margin-bottom: 30px;
 }
+
+.vignette1 img
+{
+    width: 236px;
+    height: 114px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px ;
+}
+
 
 
 #mostpopular
 {
     display: grid;
-    padding: 20px;
-}
-
-#blocphoto2
-{   display: grid;
-    grid-column: span 2;
-    border: 1px solid sienna;
-    grid-template-columns: 1fr 1 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 #hébergements2
 {
     display: grid;
-    grid-template-rows: 55px 1fr 75px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 55px 1fr;
+    grid-template-columns: 1fr;
     background-color: #f2f2f2;
     border-radius: 10px 15px;
     padding: 20px;
 }
+
+
+#blocphoto2
+{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-column: span 2;
+}
+
+
+
+.vignette2
+{
+    display: grid;
+    grid-template-columns: 128px 196px ;
+    width: 324px;
+    height: 134px;
+    border: 5px solid white;
+    border-radius: 10px 10px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.vignette2 img
+{
+    width: 128px;
+    height: 134px;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px ;
+}
+
 
 #activités
 {
@@ -289,7 +325,8 @@ footer
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color:#f2f2f2
+    background-color:#f2f2f2;
+    margin: -1;
 }
 
 .footerlist
