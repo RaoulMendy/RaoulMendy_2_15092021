@@ -16,14 +16,14 @@
             </p>
         </div>
          <nav>
-             <div id="#btn_hébergements">
+             <div>
                 <a href="#hébergements">Hébergements</a>
             </div>
-            <div id="#btn_activités">
+            <div>
                 <a href="#activités">Activités</a>
             </div>
-            <div id="#signup">
-                <p id="log"><a href="#"></a>S'inscrire</p></a>
+            <div id="signup">
+                <p><a href="#"></a>S'inscrire</p></a>
             </div>
         </nav>
         <div id="intro">
@@ -31,31 +31,35 @@
             <p>En plein centre ville ou pleine nature</p>
         </div>
     </header>
-
-    <div id="searchbar">
-        <div id="iconmap"><i class="fas fa-map-marker-alt"></i></div>
+    <section id="filter_search">
+        <div id="searchbar">
+            <div id="iconmap"><i class="fas fa-map-marker-alt"></i></div>
             <input type="text" placeholder="Marseille, France" name="ville" id="ville">
             <input type="submit" value="Rechercher" id="submit">    
-    </div>
-
-    <div id="containerfilter">
-            <h2>Filtres</h2>
-             <div id="filters">
-                <button onclick="" class="button"><div class="filtersicons"><i class="fas fa-money-bill-wave"></i></div>Economique</button>
-                <button onclick="" class="button"><div class="filtersicons"><i class="fas fa-child"></i></div>Familial</button>
-                <button onclick="" class="button"><div class="filtersicons"><i class="fas fa-heart"></i></div>Romantique</button>
-                <button onclick="" class="button"><div class="filtersicons"><i class="fas fa-dog"></i></div>Animaux autorisés</button>
+        </div>
+        <div id="filters">
+            <div id="bar_filters">
+                <h2 id="titre_filtres">Filtres</h2>
+                <div id="btn_filters">
+                    <button onclick="" class="button"><div class="filter_icon"><i class="fas fa-money-bill-wave"></i></div>Economique</button>
+                    <button onclick="" class="button"><div class="filter_icon"><i class="fas fa-child"></i></div>Familial</button>
+                    <button onclick="" class="button"><div class="filter_icon"><i class="fas fa-heart"></i></div>Romantique</button>
+                    <button onclick="" class="button"><div class="filter_icon"><i class="fas fa-dog"></i></div>Animaux autorisés</button>
+                </div>
             </div>
+        </div>
             <div id="disponibilité">
                 <div id="iconinfo"><i class="fas fa-info"></i></div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <div><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
             </div>
-    </div>
-
+        </div>
+    </section>
     <main>
         <section id="section1">
             <div id="hébergements">
-                <h1>Hébergement à Marseille</h1>
+                <div id="#titre_s1">
+                    <h1>Hébergement à Marseille</h1>
+                </div>
                 <div id="blocphoto1">
                     <div class="vignette1">
                         <div class="">
@@ -103,9 +107,7 @@
                 <div>
                     <p>Afficher plus</p>
                 </div>
-    
         </section>
-        
         <section id="mostpopular">
             <div id="hébergements2">
                 <div id="titre_s2">
@@ -130,18 +132,58 @@
         </section>
 
         <section id="activités">
-            <h2>Activités à Marseille</h2>
-            <a href="#">Hôtel Le soleil du matin</a>
-            <a href="#">Au coeur de l'eau<br>Chambres d'hôtes</a>
-            <a href="#">Hôtel Tout bleu et<br>Blanc</a>
-            <a href="#">Vieux Port</a>
-            <a href="#">Fort de Pomègue</a>
-            <a href="#">Îles du Frioul</a>
-            <a href="#">Parc National des Calanques</a>
-            <a href="#">Notre-Dame-de-la-Garde</a>
-            <a href="#">Parc Longchamp</a>
+            <div id="hébergements">
+                <div id="#titre_s3">
+                    <h1>Activités à Marseille</h1>
+                </div>
+                <div id="blocphoto3">
+                    <div class="vignette3">
+                        <div class=""><img src="" alt=""></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div id="blocphoto3">
+                    <div class="vignette3">
+                        <div class=""><img src="" alt=""></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div id="blocphoto3">
+                    <div class="vignette3">
+                        <div class=""><img src="" alt=""></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div id="blocphoto3">
+                    <div class="vignette3">
+                        <div class=""><img src="" alt=""></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div id="blocphoto3">
+                    <div class="vignette3">
+                        <div class=""><img src="" alt=""></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div id="blocphoto3">
+                    <div class="vignette3">
+                        <div class=""><img src="" alt=""></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
          </section>
     </main>
+    <!--Code en attente         <a href="#">Hôtel Le soleil du matin</a>
+                <a href="#">Au coeur de l'eau<br>Chambres d'hôtes</a>
+                <a href="#">Hôtel Tout bleu et<br>Blanc</a>
+                <a href="#">Vieux Port</a>
+                <a href="#">Fort de Pomègue</a>
+                <a href="#">Îles du Frioul</a>
+                <a href="#">Parc National des Calanques</a>
+                <a href="#">Notre-Dame-de-la-Garde</a>
+                <a href="#">Parc Longchamp</a>-->
     <footer>
         <div class="footerlist">
             <h3>A propos</h3>
