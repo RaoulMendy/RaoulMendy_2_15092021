@@ -5,8 +5,9 @@
          url('font/raleway.woff2') format('woff2');       
 }
 
-body *
+body 
 {
+    margin: 0;
     font-family: 'raleway',Arial, Helvetica, sans-serif;
 }
 
@@ -46,13 +47,37 @@ nav
     text-align: center;
 }
 
-nav #signup
+#shortcut_s1
 {
+    display: flex;
+    border-top: 5px solid #0065fc;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#shortcut_s2
+{
+    display: flex;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#signup
+{
+    display: flex;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     font-weight: bolder;
     color: #0065fc;
 }
 
-nav #intro
+#intro
 {
     grid-column: span 2;
 }
@@ -95,12 +120,13 @@ nav #intro
 
 #submit
 {
-   background-color: #0065fc;
-   color: white;
-   width: 135px;
-   border-style: none;
-   border-bottom-right-radius: 10px;
-   border-top-right-radius: 10px;
+    cursor: pointer;
+    background-color: #0065fc;
+    color: white;
+    width: 135px;
+    border-style: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #filters
@@ -146,7 +172,7 @@ nav #intro
 }
 
 
-.filter_icon
+#btn_filters span
 {
     display:flex;
     justify-content:center;
@@ -166,7 +192,7 @@ nav #intro
     align-items: center;
 }
 
-#iconinfo
+#iconinfo span
 {
     display:flex;
     justify-content:center;
@@ -176,7 +202,7 @@ nav #intro
     border: 1px solid #f2f2f2;
     border-radius:50%;
     color: #0065fc; 
-    margin-right: 1%;
+    margin-right: 10px;
 }
 
 
@@ -205,12 +231,12 @@ main
 .vignette1
 {
     display: grid;
-    grid-template-rows: 114px 75px ;
+    grid-template-rows: 114px 75px;
     width:236px;
     height: 189px;
     background-color: white;
     border: 5px solid white;
-    border-radius: 10px 15px;
+    border-radius: 10px 10px;
     margin-bottom: 30px;
 }
 
@@ -219,7 +245,28 @@ main
     width: 236px;
     height: 114px;
     object-fit: cover;
-    border-radius: 10px 10px 0px 0px ;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.description_hébergement
+{   display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0%;
+}
+
+.Nom_hébergement
+{
+    font-weight: bold;
+}
+.checked
+{
+    color: #0065fc;
+}
+
+.unchecked
+{
+    color: #f2f2f2;
 }
 
 #mostpopular
@@ -234,6 +281,7 @@ main
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
 }
 
 #titre_s2
@@ -291,6 +339,7 @@ main
 {
     object-fit: cover;
     border-radius: 10px 0px 0px 10px ;
+}
 /*__________________*/
 
 /*Section secondaire*/
@@ -305,11 +354,23 @@ footer
 }
 
 
-.footerlist,li
+.footerlist, ul
 {
     list-style-type: none;
-    
+    padding: 0%;
 }
 
+.footerlist, li
+{
+    margin-bottom: 10px;
+}
+/*------------------------------------*/
+@media (min-width: 1624px) {
+    #blocphoto1
+    {   display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-between;
+    }
+}
 
-/*______*/
