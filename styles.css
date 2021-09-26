@@ -27,6 +27,8 @@ header
     grid-template-columns: 2fr 1fr;
     font-size: small;
     font-weight: bold;
+    padding: 20px;
+    padding-top: 0;
 }
 
 nav 
@@ -77,6 +79,7 @@ nav
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
 }
 #searchbar
 {   
@@ -199,29 +202,31 @@ nav
 /*MAIN*/
 main
 {
-    display: grid;
-    grid-template-columns: 63% 33%;
-    grid-template-rows: 1fr;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#section1
+#room
 {
     background-color: #f2f2f2;
     border-radius: 30px;
     padding: 20px;
+    width: 61%;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
-#blocphoto1
+#tray_room
 {   display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.vignette1
+.card_room
 {
     display: grid;
-    grid-template-rows: 114px 75px;
+    grid-template-rows: 114px 80px;
     width:236px;
     height: 189px;
     background-color: white;
@@ -230,7 +235,7 @@ main
     margin-bottom: 30px;
 }
 
-.vignette1 img
+.card_room img
 {
     width: 236px;
     height: 114px;
@@ -238,17 +243,18 @@ main
     border-radius: 10px 10px 0px 0px;
 }
 
-.description_hébergement
+.details_room
 {   display: flex;
     flex-direction: column;
     height: 100%;
     margin: 0%;
 }
 
-.Nom_hébergement
+.room_name
 {
     font-weight: bold;
 }
+
 .checked
 {
     color: #0065fc;
@@ -259,14 +265,26 @@ main
     color: #f2f2f2;
 }
 
-#section2
+/*SECTION 2
+___________*/
+#most_popular
 {
     background-color: #f2f2f2;
     border-radius: 30px;
     padding: 20px;
+    width: 29%;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
-#blocphoto2
+#title_s2
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#tray_popular
 {   
     display: flex;
     flex-direction: column;
@@ -275,14 +293,8 @@ main
 
 }
 
-#titre_s2
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.vignette2
+.card_popular
 {
     display: grid;
     grid-template-columns: 128px 196px ;
@@ -295,7 +307,7 @@ main
     margin-bottom: 30px;
 }
 
-.vignette2 img
+.card_popular img
 {
     width: 128px;
     height: 134px;
@@ -303,27 +315,102 @@ main
     border-radius: 10px 0px 0px 10px ;
 }
 
-#activités
+/*SECTION 3
+___________*/
+#activity
 {
+    width: 100%;
     grid-column: span 2;
     margin-top: 60px;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #f2f2f2;
 }
 
-#blocphoto3
-{   
-   
-}
-.vignette3
+#tray_activity
 {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 445px;
+}
+
+.card_activity
+ {   
+    display: grid;
+    grid-template-rows: 1fr 55px;
+    border-radius: 10px 10px;
+    width: 300px;
+    box-shadow: 0px 10px 10px #f2f2f2;
+
+ }
+
+ .card_activity img
+{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#activity_1
+{
+    height: 445px;
+}
+
+#activity_1 img
+{
+    height: 390px;
+}
+
+#activity_2
+{
+    height: 235px;
+}
+#activity_2 img
+{
+    height: 180px;
+}
+
+#activity_3
+{
+    height: 165px;
 
 }
 
-.vignette3 img
+#activity_3 img
 {
+    height: 110px;
 
+}
+
+#activity_4
+{
+    height: 445px;
+}
+
+#activity_4 img
+{
+    height: 390px;
+}
+
+#activity_5
+{
+    height: 195px;
+}
+
+#activity_5 img
+{
+    height: 140px;
+}
+
+#activity_6
+{
+    height: 205px;
+}
+
+#activity_6 img
+{
+    height: 150px;
 }
 /*__________________*/
 
@@ -336,6 +423,7 @@ footer
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color:#f2f2f2;
+    padding: 20px;
 }
 
 
@@ -350,12 +438,18 @@ footer
     margin-bottom: 10px;
 }
 /*------------------------------------*/
-@media (min-width: 1624px) {
-    #blocphoto1
-    {   display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: space-between;
-    }
-}
+@media (min-width: 1600px) {
 
+#tray_room
+{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: space-between   ;
+
+    }
+
+
+
+}
+   
