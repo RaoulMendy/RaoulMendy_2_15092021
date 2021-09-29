@@ -62,6 +62,7 @@ nav {
 }
 
 #intro {
+  margin-top: 30px;
   grid-column: span 2;
 }
 
@@ -73,13 +74,37 @@ nav {
   padding: 20px;
 }
 #searchbar {
-  display: grid;
-  grid-template-columns: 50px 1fr 1fr;
-  grid-template-rows: 50px;
+  display: flex;
+  height: 50px;
+  width: 32%;
   margin-block-end: 30px;
-  justify-content: flex-end;
-  width: min-content;
-  border: transparent;
+}
+
+#iconmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+#city {
+  border-color: #f2f2f2;
+  width: 235px;
+  border-style: solid;
+  border-right: none;
+}
+
+#submit {
+  cursor: pointer;
+  background-color: #0065fc;
+  color: white;
+  width: 135px;
+  border-style: none;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 #filters {
@@ -104,36 +129,9 @@ nav {
   border-radius: 50px 0px 0px 50px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  margin-inline: 30px;
+  margin-inline-end: 30px;
   margin-block-end: 30px;
   height: 50px;
-}
-
-#iconmap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2f2f2;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-#city {
-  border-color: #f2f2f2;
-  width: 235px;
-  border-style: solid;
-  border-right: none;
-  color: black;
-}
-
-#submit {
-  cursor: pointer;
-  background-color: #0065fc;
-  color: white;
-  width: 135px;
-  border-style: none;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .button:hover {
@@ -392,13 +390,12 @@ li {
 }
 /*------------------------------------*/
 
-@media screen and (min-width: 0px) and (max-width: 1239px) {
+@media screen and (max-width: 1239px) {
   /*SECTION 4*/
   #activity {
     display: flex;
     flex-direction: column;
     width: 100%;
-
   }
 
   #tray_activity {
@@ -465,19 +462,75 @@ li {
   }
 }
 
-  /*_______SECTION 2 & 3____________
+@media screen and (max-width: 985px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo {
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #shortcut_room {
+    display: flex;
+    width: 50%;
+    height: 50px;
+    border-bottom: 5px solid #0065fc;
+    border-top: none;
+  }
+
+  #shortcut_activity {
+    display: flex;
+    width: 50%;
+    height: 50px;
+    border-bottom: 5px solid #f2f2f2;
+  }
+
+  #signup {
+    width: 10%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 5%;
+    font-weight: bolder;
+  }
+  #filters {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-block-end: 30px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
   #room {
-    background-color: #f2f2f2;
-    border-radius: 30px;
-    padding: 20px;
-    width: 45%;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
   }
-  #most_popular {
-    background-color: #f2f2f2;
-    border-radius: 30px;
-    padding: 20px;
-    width: fit-content;
-    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 750px) {
+  #tray_activity {
+    height: 1400px;
   }
-  */
+
+  #tray_room {
+    justify-content: space-around;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+}
