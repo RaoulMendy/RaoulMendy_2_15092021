@@ -66,6 +66,7 @@ nav {
 }
 
 #filter_search {
+  order: 1;
   grid-column: span 2;
   width: 100%;
   display: flex;
@@ -106,10 +107,27 @@ nav {
   border-top-right-radius: 15px;
 }
 
+#loupe
+{
+  display: none;
+  cursor: pointer;
+  background-color: #0065fc;
+  color: white;
+  width: 135px;
+  border-style: none;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 #filters {
   display: flex;
   width: 100%;
   margin-block-end: 30px;
+}
+
+#title_filters
+{
+  margin-inline-end: 30px;
 }
 
 #btn_filters {
@@ -177,6 +195,7 @@ main {
 }
 
 #room {
+  order: 2;
   grid-row: span 2;
   background-color: #f2f2f2;
   border-radius: 18px;
@@ -237,11 +256,12 @@ main {
 /*SECTION 2
 ___________*/
 #most_popular {
+  order: 3;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 18px;
-  width: 80%;
+  width: 100%;
   height: 650px;
 }
 
@@ -303,11 +323,12 @@ ___________*/
 /*SECTION 3
 ___________*/
 #activity {
-  width: 100%;
+  order: 4;
   grid-column: span 2;
   margin-top: 60px;
   margin-bottom: 30px;
   padding: 20px;
+  width: 100%;
 }
 
 #tray_activity {
@@ -320,9 +341,10 @@ ___________*/
 
 .card_activity {
   display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
   grid-template-rows: 1fr 55px;
   border-radius: 10px 10px;
-  width: 302px;
   box-shadow: 0px 10px 10px #f2f2f2;
 }
 
@@ -413,7 +435,6 @@ li {
   #activity {
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
 
   #tray_activity {
@@ -422,6 +443,7 @@ li {
     justify-content: space-around;
     align-content: space-around;
     height: 850px;
+
   }
 
   .card_activity {
@@ -525,15 +547,42 @@ li {
     margin-block-end: 30px;
   }
 
+  #submit {
+    display: none;
+  }
+  
+  #loupe {
+    display: block;
+    cursor: pointer;
+    background-color: #0065fc;
+    color: white;
+    min-width: 50px;
+    border-style: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
   main {
     display: flex;
     flex-direction: column;
   }
 
+  #most_popular
+  {
+    order: 2;
+  }
+
   #room {
-    width: 100%;
-    max-width: 100%;
-    background-color: white;
+    order: 3;
+  }
+
+  #tray_room {
+    display: flex;
+    justify-items: center;
+    flex-flow: column;
+    margin: auto;
+    row-gap: 28px;
+    justify-content: center;
   }
 }
 
