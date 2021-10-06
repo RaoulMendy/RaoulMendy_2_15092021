@@ -21,17 +21,21 @@ p {
   font-size: 1em;
 }
 
+h1 {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
 h2 {
   font-size: 1.2em;
   font-weight: bolder;
 }
 
-h4 {
+h3 {
   font-weight: bolder;
   font-size: 1em;
   
 }
-#activity h4 {
+#activity h3 {
   padding-left: 10px;
 }
 
@@ -83,6 +87,14 @@ nav {
   grid-column: span 2;
 }
 
+
+/*MAIN*/
+main {
+  display: grid;
+  grid-template-columns: 63% 33%;
+  grid-template-rows: 250px 1fr 1fr;
+  column-gap: 60px;
+}
 #filter_search {
   grid-column: span 3;
   width: 100%;
@@ -202,13 +214,6 @@ nav {
   margin-right: 10px;
 }
 
-/*MAIN*/
-main {
-  display: grid;
-  grid-template-columns: 63% 33%;
-  grid-template-rows: 250px 1fr 1fr;
-  column-gap: 60px;
-}
 
 #room {
   background-color: #f2f2f2;
@@ -609,6 +614,7 @@ li {
     display: flex;
     height: 50px;
     width: 100%;
+    margin: auto;
     margin-block-end: 30px;
   }
 
