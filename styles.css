@@ -36,8 +36,14 @@ h2 {
 
 h3 {
   font-weight: bolder;
-  font-size: 1em;
+  font-size: 0.9em;
 }
+
+footer h3 {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
 #activity h3 {
   padding-left: 10px;
 }
@@ -153,6 +159,7 @@ main {
   font-size: 0.9em;
   font-weight: bold;
   border-style: none;
+  width: 135px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -345,16 +352,18 @@ main {
   display: flex;
   flex-direction: column;
   height: 134px;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .details_popular > * {
   margin: 0%;
   margin-left: 10px;
 }
-
 .details_popular .price {
-  padding-top: 10px;
+  padding-top: 5px;
+}
+.details_popular .mark {
+  margin-top: auto;
 }
 
 /*ACTIVITY*/
@@ -469,7 +478,7 @@ li {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 1103px) {
+@media screen and (max-width: 1182px) {
   header {
     display: flex;
     flex-direction: column;
@@ -700,4 +709,27 @@ li {
     row-gap: 28px;
     justify-content: center;
   }
+}
+
+@media screen and (max-width: 343px) {
+ 
+  .card_popular {
+    display: grid;
+    grid-template-columns: 38.4% 61.6%;
+    width: 100%;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 10px 10px;
+    justify-content: center;
+    margin-block-end: 30px;
+  }
+  
+  .card_popular img {
+    height: 150px;
+  }
+  
+  .details_popular {
+    height: 150px;
+  }
+ 
 }
